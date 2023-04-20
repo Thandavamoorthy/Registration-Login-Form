@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration & Login Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="" type="image/x-icon">
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <div class="full-page">
+      <div class="navbar">
+        <div class="brand">
+          <a href="#">Thandavn</a>
+        </div>
+        <nav>
+          <ul id="menuItems">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button class="loginBtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</button></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="login-form" id="login-form">
+        <div class="form-box">
+          <div class="button-box">
+            <div class="" id="btn"></div>
+            <button class="toggle-btn" type="button" onclick="login()">Log In</button>
+            <button class="toggle-btn" type="button" onclick="register()">Register</button>
+          </div>
+          <form action="" id="login" class="input-group-login">
+            <input type="text" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log in</button>
+          </form>
+          <form action="" id="register" class="input-group-register">
+            <input type="text" class="input-field" placeholder="First Name" required>
+            <input type="text" class="input-field" placeholder="Last Name" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="password" class="input-field" placeholder="Confirm Password" required>
+            <input type="checkbox" class="check-box"> <span>I agree to the terms and conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
