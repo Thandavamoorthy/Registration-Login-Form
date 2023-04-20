@@ -321,11 +321,11 @@ span {
 
   .form-box {
     width: 320px;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 
   #login {
-    left: 20px;
+    left: 10px;
   }
   #register {
     left: 400px;
